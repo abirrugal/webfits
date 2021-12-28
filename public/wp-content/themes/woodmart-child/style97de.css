@@ -1,0 +1,1069 @@
+/*
+Theme Name: KhaasFood Child
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: the WordPress team
+Template: woodmart
+Author URI: http://xtemos.com
+Description: Khaasfood Theme.
+Version: 1.0.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: khaasfood
+*/
+
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+/* category image full width */
+.cat-design-alt img {
+/*     width: 100%; */
+}
+
+/* Khaasfood Blog post title margin-botton */
+.img-container {
+    margin-bottom: 15px;
+}
+
+.img-container img {
+    /* height: 100%; */
+    width: 100% !important;
+}
+
+/***************************** Header/ Menu ********************/
+.whb-header{
+	margin-bottom: 0px !important;
+}
+
+/* Logo */
+
+@media screen and (min-width: 768px){
+	.whb-sticky-row .site-logo {
+    	display: none;
+	}
+	
+	header.whb-sticked .whb-sticky-row .site-logo {
+    	display: block;
+	}
+}
+
+/* Bangla section footer top*/
+
+.s{
+	border: 2px solid #8cb23b !Important;
+	
+}
+
+/* .whb-header-bottom .menu-opener{
+	display: inline !Important;
+}
+
+.menu-opener .menu-open-label{
+	display: none !Important;
+} */
+
+/* EN and  BN  border-right*/
+
+ul#menu-language li a {
+    padding-left: 5px !Important;
+    padding-right: 5px !Important;
+}
+
+li#menu-item-427-en{
+	border-right: 1px solid #cfcfcf;
+}
+/* Mobile phone chickout button position*/
+
+@media screen and (max-width: 768px){
+	.cart-widget-side .shopping-cart-widget-footer>p {
+      padding-bottom: 34px;
+    }
+}
+
+.whb-header-bottom .whb-secondary-menu .item-level-0 > a{
+	height: 20px !Important;
+}
+
+.s::-webkit-input-placeholder { /* Edge */
+  color: #8cb23b;
+}
+
+.s:-ms-input-placeholder { /* Internet Explorer */
+  color: #8cb23b;
+}
+
+.s::placeholder {
+  color: #8cb23b;
+}
+
+ul#menu-language-1 {
+    margin-top: 8px;
+}
+
+.whb-sticked .whb-main-header, .whb-main-header{
+	box-shadow:  0 2px 5px rgba(0, 0, 0, .1) !Important;
+}
+
+li.item-level-0.my-account-with-icon.menu-item-my-account.menu-simple-dropdown.item-event-hover a{
+    margin-top: 10px !Important;
+}
+
+.product-quick-view .single_page_btn_cont{
+	display: none;
+}
+
+.order_modal{
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 100vh;
+	width:100vw;
+	background: rgba(81, 142, 0, 0.95);
+	z-index: 999;	
+	overflow: scroll;
+}
+
+.inner_modal{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+ 	width: 100%; 
+	padding: 20px;
+	background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+input#quantity {
+    padding: 0;
+    text-align: left;
+    padding-left: 10px;
+    width: 100px;
+}
+
+@media screen and (min-width: 768px){
+	.inner_modal{
+		width: 800px;
+	}	
+}
+
+@media screen and (max-width: 768px){	
+	.inner_modal{
+		top: 77% !important;
+		padding-top: 50px;
+		padding-bottom: 60px;
+		margin-bottom: 30px;
+	}	
+	
+	.inner_modal .close_btn {
+      top: 15px;
+   }
+	
+	.product_image img{
+		margin-top: 2px;
+	}	
+}
+
+.inner_modal .close_btn {
+    position: absolute;
+    top: -12px;
+    right: 11px;
+    background: #fff;
+    color: #000;
+    border-radius: 100%;
+    padding: 1px 7px;
+    box-shadow: 0 0 5px #ff0000ad;
+    transition: all .3s;
+}
+
+.inner-modal .close_btn:hover {
+	box-shadow: 0 0 1px #ff0000ad;
+	border: 2px solid red;
+	transition: all .3s;
+}
+
+#qo_phone{
+	text-align: left !important;
+	padding-left: 20px !Important;
+}
+
+#billing_phone_field{
+	width: 100% !Important;
+}
+
+.error_msg{
+	color: red !important;
+}
+
+div#succes_msg {
+display: none;
+    background: #1f6517;
+    box-shadow: 0 0 15px #0000008f;
+    color: #fff;
+    padding: 10px;
+}
+
+#succes_msg p{
+	margin-bottom: 0px !Important;
+}
+
+div#err_msg{
+display: none;
+    background: #da0b0b;
+    box-shadow: 0 0 15px #0000008f;
+    color: #fff;
+    padding: 10px;
+}
+
+#err_msg p{
+	margin-bottom: 0px !Important;
+}
+
+a.order_now_btn {
+    color: #83b735;
+    font-family: oswald;
+    font-size: 15px;
+    margin: auto;
+    padding: 5px 10px;
+    background: #ffffff;
+    border: 2px solid;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all .2s;
+    width: 109px;
+}
+
+a.order_now_btn:hover{
+    background: #83b735;
+    border: 1px solid #d8d8d8;
+	color: #fff;
+	transition: all .2s;
+	cursor: pointer;
+}
+
+.single_page_btn_cont a {
+    padding: 10px;
+    background: #0088cc;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 227px;
+	font-family: Oswald;
+    font-size: 18px;
+	text-decoration: none;
+}
+
+.single_page_btn_cont .order_now_btn{
+	margin: 0 0 10px 0 !important;
+}
+
+.mwb_wpr_purchase_pro_point{
+	display: none;
+}
+
+.woodmart-shopping-cart .woodmart-cart-icon:before{
+	font-size: 25px !important;
+}
+
+/***************** Cart animation *************************/
+.cartAnim{	
+/* 	animation-name: shake;
+  	animation-duration: 1s;
+	transition: .2s;
+	 */
+	
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* @-webkit-keyframes shake {
+  33% {transform: rotate(30deg);}
+  66% {transform: rotate(-30deg);}
+} */
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/*end card animation */
+
+/************ Checkout page ***************/
+
+.checkout_login{
+	background: #e38800;
+    color: #fff !Important;	
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+	width: 98%;
+	border-radius: 50px;
+	text-align: center;
+    padding: 12px;
+}
+
+.checkout_login:hover{
+	background: #dc9b3b !Important;	
+}
+
+.woocommerce-form__input-checkbox{
+	margin-top: 10px;
+}
+
+p#billing_first_name_field {
+    width: 100% !Important;
+}
+
+.displayToggle{
+   display:none;	
+}
+
+.courier_popup {
+    position: fixed;
+    bottom: 20px;
+    left: -320px;
+    width: 300px;
+	opacity: 0;
+    padding: 30px;
+    background: #83b735;
+    box-shadow: 1px 5px 13px #ff990054;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+	transition: all .5s;
+}
+
+/* End of checkout */
+
+.img-container{
+	overflow: hidden;
+}
+
+.img-container img {
+    object-fit: contain;
+     max-width: 100%;
+    height: 200px;
+    vertical-align: middle;
+	transition: all 1s;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+    transition: all .7s;
+}
+
+/* Footer shop now btn*/
+.fixed_footer_bar {
+    border-bottom: 2px solid #003a1a;
+	box-shadow: 0 0 15px #0000001f;
+    padding: 11px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+	z-index: 999;
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+	.fixed_footer_bar{
+		display: block;
+	}
+	
+	.min-footer>div:last-child {
+    	margin-bottom: 50px;
+	}
+	
+	.fb_dialog{
+		bottom: 6pt !Important;
+	}
+	
+	.fb_customer_chat_bubble_animated_no_badge{
+		box-shadow: none !Important;
+	}
+}
+
+@media screen and (max-width: 400px){
+   .footer-shop-btn {
+      padding: 15px 40px !important;
+   }
+}
+@media screen and (max-width: 335px){
+   .footer-shop-btn {
+      padding: 15px 20px !important;	   
+   }
+	.footer-user {
+    padding: 18px 17px !important;
+   }
+}
+
+.footer-shop-btn {
+    background-color: #003a1a;
+    color: #fff;
+	padding: 15px 78px;
+    font-size: 15px;
+}
+
+.footer-user {
+   padding: 18px 32px;
+}
+.footer-user i {
+    font-size: 20px;
+}
+
+/*Order status cancelled color*/
+.status-cancelled {
+    background-color: #da9789 !important;
+    color: #fff !important;
+}
+
+/*
+  Cheackout page Back button
+ */
+.Back-To-m-Cart{
+	margin-top:40px;
+	margin-bottom: 40px;
+}
+.Back-To-Cart {
+    background-color: #83b735;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #fff
+}
+
+/*
+  Rest API blog style
+ */
+.blog-date {
+    margin: auto;
+    background: #fff;
+    margin-top: 16px;
+    padding: 4px 8px 2px 8px;
+    font-size: 18px;
+    position: absolute;
+    color: #003a1a;
+    margin-left: 8px;
+}
+
+/***************** Custom registation system *************************/
+.registation-nav-border {
+    border-bottom: 0px solid #ddd;
+}
+.tab-content {
+    border: 1px solid #ddd;
+    padding: 1px 15px;
+}
+
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    width: 50%;
+}
+.nav-tabs>li>a {
+    margin-right: -1px;
+}
+
+.custom-button {
+    background-color: #83b735;
+    border-radius: 52px;
+    margin: 15px;
+    padding: 12px 60px;
+    color: #fff;
+	margin-left: 5px;
+}
+.confirmCode_btn{
+	background-color: #83b735;
+    border-radius: 52px;
+    margin: 15px;
+    padding: 12px 60px;
+    color: #fff;
+    margin-left: 5px;
+}
+.email_reg_success {
+    background-color: #83b735;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+}
+.phone_reg_success {
+    background-color: #83b735;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+}
+.confirmCode_notmatch {
+    color: #f71515;
+    padding: 6px;
+	font-size: 16px;
+}
+.woodmart-switch-to-register {
+    background-color: #83b735;
+    color: #fff !important;
+}
+
+/***************** Custom tabs *************************/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-left: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-right: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 50%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #003a1a;
+    color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+/* Order taking button */
+.form-row .button {
+    background-color: #83b735;
+    color: #FFF;
+    border-radius: 50px;
+}
+
+/* Sold Out Products lavel */
+.product-label.out-of-stock {
+    background-color: #e22d2d;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+/* Header searchbar select category none */
+.search-by-category {
+    position: absolute;
+    top: 2px;
+    right: 52px;
+    display: none;
+}
+
+/*************************************
+  main slider css custom post type
+ *************************************/
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+ cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #0e4023;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #ffffff8c;
+    border-radius: 50% !important;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+/*   background-color: #717171; */
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.home .main-page-wrapper {    
+	margin-bottom: -50px;
+}
+
+.main-page-wrapper{
+	margin-top: 0px !Important;
+}
+/* Checkout page (Subscription) */
+
+button.sub_day {
+    padding: 8px 13px;
+    width: 100px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    border-radius: 30px;
+    background: #ffa50033;
+    box-shadow: 0 0 15px #0000000f;
+}
+
+button.sub_day.active {
+    background: #1ea01e;
+    color: #fff;
+}
+
+button.apply_subscription {
+    border-radius: 30px;
+    background: #83b735;
+    color: #fff;
+}
+.checkout_subscription {
+    border: 1px solid #ededed;
+    padding: 20px;
+    background: #ddecde2b;
+    box-shadow: 0 0 5px #edededcf;
+}
+
+#subs_input_area{
+    display: none;
+}
+
+button.cancle_subscription {
+    border-radius: 20px !important;
+    background: #ffa40045 !important;
+}
+
+/******************************************
+    Start Product quality button style 
+******************************************/
+
+.product_quantity {
+/*     float: left; */
+	background-color: #003a1a;
+	color: #000;
+    margin-top: 0%;
+    font-size: 13px;
+    font-weight: 600;
+    border: 2px solid #c8e8e4;
+    border-radius: 50px;
+    padding: 1px 5px;
+/*     margin-left: -84%;  */
+	width: 64px;
+	background: #c8e8e4;
+	margin-left: 0% !Important;
+}
+
+.price {
+/*    position: absolute; */
+	display: inline-block !Important;
+    border: 2px solid #c8e8e4;
+    padding: 0px 5px;
+    border-radius: 50px;
+	background: #c8e8e4;
+/*     margin-left: 51%; */
+}
+
+/* End Product quality button style */
+.woodmart-hover-standard .btn-add {
+    margin-top: 15px;
+}
+
+/* Custom Price Font Size  */
+.woocommerce-Price-amount.amount {
+    font-size: 13px;
+}
+
+/* Custom star Rating style */
+/*
+.rating_in {
+    position: absolute;
+    margin-left: 19%;
+    margin-top: -11%;
+}
+@media only screen and (max-width: 330px)  {
+	.rating_in {
+    margin-left: 28%;
+    margin-top: -17%;
+   }
+}
+@media only screen and (min-width: 331px) and (max-width: 380px) {
+	.rating_in {
+    margin-left: 26%;
+    margin-top: -14%;
+  }
+}
+@media only screen and (min-width: 381px) and (max-width: 440px) {
+	.rating_in {
+    margin-left: 23%;
+    margin-top: -12%;
+  }
+}
+@media only screen and (min-width: 441px) and (max-width: 768px) {
+	.rating_in {
+    margin-left: 22%;
+    margin-top: -13%;
+ }
+}
+
+.product-grid-item .star-rating {*/
+/*     left: -6%;
+    right: 0; */
+    /*margin: auto; 
+}
+.star-rating {
+    display: block;
+	margin-bottom: 6px !important;
+}
+
+info.rating_count {
+    position: absolute;
+    top: 0;
+    right: -28px;
+}
+
+.star-rating + .empty_rating{
+	display: none;
+}
+
+.star-rating span{
+	left: 32% !Important;
+}
+*/
+/* Review must-log-in User */ 
+.must-log-in {
+    background-color: #83b735;
+    width: 90%;
+    padding: 16px;
+    font-size: 23px;
+    color: #fff;
+}
+
+/* Email subscribed comfrem font size admin panel*/
+.subscribed.es_list_contact_status:before {
+    font-size: 40px !important;
+}
+
+/* products title fixed hide weight */
+body .product-title, 
+body .product-grid-item .product-title{
+min-height:36px;
+max-height:36px;
+}
+
+/* Social Icon styls */
+
+.icons-size-large .woodmart-social-icon {
+    width: 30px !Important;
+    height: 30px !Important;
+	background-color: rgba(255, 255, 255, 0) !Important;
+}
+
+.icons-size-large i{
+	line-height: 30px !Important;
+}
+
+/*
+ * Single Product Page */
+
+.single-product-page .woocommerce-product-rating{
+	display: block !Important;
+}
+
+.single .product-image-summary-wrap .price{
+	border: none !important;
+	background: none !Important;
+}
+
+.single .product-image-summary-wrap .woocommerce-Price-amount.amount{
+	font-size: 25px !Important;
+}
+
+/*Footer */
+input#es_subscription_form_submit_1592156634 {
+    border-radius: 100px;
+    padding: 5px 10px !Important;
+    font-size: 12px !important;
+}
+
+footer .woodmart-social-icons.text-left.icons-design-.icons-size-default.color-scheme-light.social-follow.social-form-circle {
+    margin-left: -20px;
+}
+
+footer .woodmart-social-icons a i {
+    font-size: 20px !important;
+	color: #fff !Important;
+}
+
+footer .wpb_content_element {
+    margin-bottom: 17px !Important;
+}
+
+span.woocommerce-Price-amount.amount {
+    color: #000 !Important;
+}
+
+.order_cancel_msg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    padding: 38px;
+    background: orange;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+#cancel_order {
+    background: #83AC2B;
+    color: #fff;
+}
+
+/* subscripton Email confrem font size */
+.es_list_contact_status:before {
+    font-size: 40px !important;
+}
+
+/* Custom Registration */
+
+ul.ui-widget-header{
+	border: none !Important;
+    background: none !Important;
+}
+
+#customer_login{
+	margin-right: 0px !Important; 
+    margin-left: 0px !important;
+}
+
+.ui-tabs .ui-tabs-nav li{
+	border-bottom-width: 1px !Important;
+	padding: 2px !Important;
+	width: 49% !important;
+	border-radius: 0px !Important;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {    
+    display: block;
+    width: 100%;
+	font-size: 18px !Important;
+    text-align: center !Important;
+}
+
+/************* My Account Page *********/
+
+li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--wishlist {
+    display: none;
+}
+
+.woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout {
+    display: none;
+}
+
+.wishlist-link {
+    display: none !Important;
+}
+
+@media only screen and (min-width: 768px)  {
+    .category-grid-item img {
+     width: 371px;
+     height: 290px;
+  }
+}
+
+/* Popup message for not logged in user */
+.um_container {
+	display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000ad;
+    z-index: 99999;
+}
+
+.um_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 10px 20px #00000036;
+    padding: 40px;
+}
+
+.um_inner p{
+	text-align: center;
+	font-size: 20px !Important;
+	margin-bottom: 0px !Important;
+	color: #000 !Important;
+}
+
+.um_inner p a{	
+	color: #83b735 !Important;
+}
+
+span.close_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: 6px 10px;
+    background: #ececec;
+    box-shadow: 0 0 10px #ff00001c
+	transition: all .9s;
+}
+
+span.close_button:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px #f003;
+	background: #ff0000;
+    color: #fff;
+	transition: all .9s;
+}
+
+.create-account-question {
+    padding-bottom: 100px !important;
+}
+
+.dokan-alert-danger,.dokan-alert-info,.dokan-alert-warning,.dokan-error,.dokan-info,.mc4wp-error,.mc4wp-notice,.woocommerce-error,.woocommerce-info,.wpcf7 form.aborted .wpcf7-response-output,.wpcf7 form.failed .wpcf7-response-output,.wpcf7 form.invalid .wpcf7-response-output,.wpcf7 form.spam .wpcf7-response-output,.wpcf7 form.unaccepted .wpcf7-response-output,div.wpcf7-mail-sent-ng,div.wpcf7-validation-errors {
+    background-color: #e74c3c;
+}
+
+.star-rating {
+    display: table;
+    margin: 0 auto;
+}
+/* Decrease the size of notes field */
+textarea#order_comments{
+    min-height:70px
+}
+
+.woodmart-swatch.swatch-on-single.swatch-size-default.active-swatch {
+    background-color:#438E44;
+    color: white;
+    padding: 5px 10px;  
+  }
+  .woodmart-swatch.active-swatch:after,
+.woodmart-swatch:hover:after {
+ opacity:0
+}
+
+#billing_country_field{
+    display: none;
+}
+
+.black-box{
+  background: rgb(0 0 0);
+  color: #fff !Important;  
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: bold;  
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  padding: 12px 20px;
+}

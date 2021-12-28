@@ -1,0 +1,21 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-size: 70%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.overlay.sold-out {
+    background-image: url(../images/sold-out.png);
+}
+
+.overlay.booked {
+    background-image: url(../images/booked-v2.png);
+}
